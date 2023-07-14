@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노동</title>
+    <link rel="stylesheet" href="main.css"><!-- main.css 파일 css로 불러오기-->
+    <style>
+        body {background-image: url(images/컴\ 바탕.webp);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+        /* body {background-image: url(images/흙.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-size: none} */
+    </style>
+</head>
+<body>
+
+    <div class="web">
+        <a href="../game.html">back</a>
+    </div>
+
+    <div class="main">
+        <div id="nowMoney">0</div>
+        <div class="fever">
+            <div id="fever">Fever</div>
+            <div id="feverMain">
+                <div id="feverMainInner"></div>
+            </div>
+        </div>
+        <div id="btn" onclick="addMoney();">지상</div>
+        <div id="upgrade" onclick="upgrade();">땅 파기</div>
+    </div>
+    
+    <div class="shop">
+        <div id="changeShop" onclick="changeShop();">일꾼</div>
+        <div id="workerShop"></div>
+        <div id="upgradeShop">
+            <div class="upgrades" id="upgrade0" onclick="buyUpgrade(0);"></div>
+            <div class="upgrades" id="upgrade1" onclick="buyUpgrade(1);"></div>
+            <div class="upgrades" id="upgrade2" onclick="buyUpgrade(2);"></div>
+        </div>
+    </div>
+
+    <script src="data/worker.js"></script> <!-- worker.js 파일 변수로 불러오기-->
+    <script src="data/button.js"></script> <!-- button.js 파일 변수로 불러오기-->
+    <script src="data/mouse.js"></script> <!-- mouse.js 파일 변수로 불러오기-->
+    <script src="main.js"></script> <!-- main.js 파일 js로 불러오기-->
+</body>
+</html>
